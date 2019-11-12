@@ -4,11 +4,15 @@ import InputMoney from '../containers/InputMoney';
 import Sum from '../containers/Sum';
 
 export default class Calc extends React.Component {
-  state = {
-    days: 50,
-    money: 50,
-    sum: 100
-  };
+  constructor(props){
+    super(props);
+
+    this.state = {
+      days: 50,
+      money: 50,
+      sum: 100
+    };
+  }
 
   inputHandler = (event) => {
     const name = event.target.name;
@@ -20,7 +24,7 @@ export default class Calc extends React.Component {
 
   render() {
     const sum = Number(this.state.days) + Number(this.state.money);
-    
+
     return (
       <>
         <InputDays
