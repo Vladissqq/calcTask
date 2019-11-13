@@ -1,0 +1,9 @@
+.sum-container {
+    width: 100%;
+}
+
+.sum-header {
+    text-align: center;
+    font-family: monospace;
+    color: #7efaa3;
+}

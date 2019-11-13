@@ -1,5 +1,5 @@
 import React from 'react';
-import Calc from './components/Calc';
+import Calc from './components/Calc/Calc';
 
 
 function App() {
