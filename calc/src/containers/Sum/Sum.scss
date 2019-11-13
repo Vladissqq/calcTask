@@ -1,0 +1,17 @@
+$fontColor:#7efaa3;
+@mixin sumContainer {
+    width: 100%;
+}
+
+@mixin fontStyles {
+    text-align: center;
+    font-family: monospace;
+    color: $fontColor;
+}
+
+.sum-container {
+    @include sumContainer();
+    .sum-header {
+        @include fontStyles()
+    }
+}

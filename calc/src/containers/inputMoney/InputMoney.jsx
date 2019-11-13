@@ -1,5 +1,5 @@
 import React from 'react'
-import './InputMoney.css'
+import './InputMoney.scss'
 
 export default function InputMoney({ handler, money }) {
   return (

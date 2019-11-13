@@ -1,5 +1,5 @@
 import React from 'react'
-import './Sum.css'
+import './Sum.scss'
 
 export default function Sum({ sum }) {
   return (

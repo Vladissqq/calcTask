@@ -1,8 +1,8 @@
 import React from 'react'
-import InputDays from '../../containers/inputDays/InputDays'
-import InputMoney from '../../containers/inputMoney/InputMoney'
+import InputDays from '../../containers/InputDays/InputDays'
+import InputMoney from '../../containers/InputMoney/InputMoney'
 import Sum from '../../containers/Sum/Sum'
-import './Calc.css'
+import './Calc.scss'
 
 export default class Calc extends React.Component {
   constructor(props) {

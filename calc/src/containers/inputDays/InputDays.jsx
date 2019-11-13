@@ -1,5 +1,5 @@
 import React from 'react'
-import './InputDays.css'
+import './InputDays.scss'
 
 export default function InputDays({ handler, days }) {
   return (

@@ -1,0 +1,88 @@
+$fontColour: #a967af;
+$thumbColour: #a967af;
+$sliderColour: #a967af;
+@mixin inputDaysContainer {
+    height: 100%;
+    background-color: white;
+    margin-bottom: 13px;
+    padding: 7px;
+    border-radius: 13px;
+}
+
+.inputDays-container {
+    @include inputDaysContainer();
+    .inputDays-header {
+        font-family: monospace;
+        color: $fontColour;
+    }
+    .inputDays[type=range] {
+        -webkit-appearance: none;
+        margin: 18px 0;
+        width: 100%;
+    }
+    .inputDays[type=range]:focus {
+        outline: none;
+    }
+    .inputDays[type=range]::-webkit-slider-runnable-track {
+        width: 100%;
+        height: 8.4px;
+        cursor: pointer;
+        background: $sliderColour;
+        border-radius: 1.3px;
+    }
+    .inputDays[type=range]::-webkit-slider-thumb {
+        height: 36px;
+        width: 16px;
+        border-radius: 3px;
+        background: $thumbColour;
+        cursor: pointer;
+        -webkit-appearance: none;
+        margin-top: -14px;
+    }
+    .inputDays[type=range]:focus::-webkit-slider-runnable-track {
+        background: $sliderColour;
+    }
+    .inputDays[type=range]::-moz-range-track {
+        width: 100%;
+        height: 16px;
+        cursor: pointer;
+        background: $sliderColour;
+        border-radius: 3px;
+    }
+    .inputDays[type=range]::-moz-range-thumb {
+        height: 36px;
+        width: 16px;
+        background: $thumbColour;
+        cursor: pointer;
+    }
+    .inputDays[type=range]::-ms-track {
+        width: 100%;
+        height: 8.4px;
+        cursor: pointer;
+        background: transparent;
+        border-color: transparent;
+        border-width: 16px 0;
+        color: transparent;
+    }
+    .inputDays[type=range]::-ms-fill-lower {
+        background: $sliderColour;
+        border-radius: 2.6px;
+    }
+    .inputDays[type=range]::-ms-fill-upper {
+        background: $sliderColour;
+        border-radius: 2.6px;
+    }
+    .inputDays[type=range]::-ms-thumb {
+        height: 36px;
+        width: 16px;
+        border-radius: 3px;
+        background: $thumbColour;
+        cursor: pointer;
+    }
+    .inputDays[type=range]:focus::-ms-fill-lower {
+        background: $thumbColour;
+    }
+    .inputDays[type=range]:focus::-ms-fill-upper {
+        background: $thumbColour;
+    }
+}

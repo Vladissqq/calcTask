@@ -1,13 +1,15 @@
+$bgColour: #fafafa;
+$borderColour: #aaaaaa;
 .calc-container {
     width: 30%;
     height: 100%;
-    background-color: #ee0000;
+    background-color: $bgColour;
     margin: auto;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
     padding: 13px;
-    border: 0.3px solid #aaaaaa;
+    border: 0.3px solid $borderColour;
     border-radius: 13px;
 }
